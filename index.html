@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="rgb(250, 250, 250)">
+    <script src="js/letter-transformation.js" defer></script>
+    <script src="js/filters.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <title>Fabrik Artistik</title>
+</head>
+<body>
+    <h1><a href="/drama.html"><span>F</span><span>a</span><span>b</span><span>r</span><span>i</span><span>k</span> <span>A</span><span>r</span><span>t</span><span>i</span><span>s</span><span>t</span><span>i</span><span>k</span></a></h1>
+    <a class="cirkel">platform voor<br>muzische lessen</a>
+    <div>
+        <a class="sticker" href="/drama.html"><span>B</span><span>e</span><span>e</span><span>l</span><span>d</span></a>
+        <a class="sticker" href="/drama.html"><span>D</span><span>a</span><span>n</span><span>s</span></a>
+        <a class="sticker" href="/drama.html"><span>D</span><span>r</span><span>a</span><span>m</span><span>a</span></a>
+        <a class="sticker" href="/drama.html"><span>M</span><span>u</span><span>z</span><span>i</span><span>e</span><span>k</span></a>
+    </div>
+</body>
+<script>
+    if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/service-worker.js")
+    .then(() => console.log("Service Worker registered"));
+}
+
+</script>
+</html>

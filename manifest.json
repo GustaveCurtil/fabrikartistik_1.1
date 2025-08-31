@@ -1,0 +1,8 @@
+{
+  "name": "Fabrik Artistik",
+  "short_name": "Fabrik Artistik",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafafa",
+  "theme_color": "#d73c56"
+}
