@@ -94,14 +94,15 @@ a.sticker span {
   text-decoration: underline;
 }
 
+
 @keyframes wobble {
   0%   { transform: rotate(var(--start-angle)); }
   100% { transform: rotate(var(--start-angle)); }
 }
-div>a.sticker:nth-of-type(1) {background-color: rgb(179, 158, 22); transform:rotate(3deg); display: inline-block;}
-div>a.sticker:nth-of-type(2) {background-color: rgb(11, 133, 34); transform:rotate(-2deg); display: inline-block;}
-div>a.sticker:nth-of-type(3) {background-color: rgb(50, 71, 205); transform:rotate(1deg); display: inline-block;}
-div>a.sticker:nth-of-type(4) {background-color: rgb(176, 121, 27); transform:rotate(-3deg); display: inline-block;}
+div>a.sticker:nth-of-type(1) {background-color: rgb(179, 158, 22); rotate: 3deg; display: inline-block;}
+div>a.sticker:nth-of-type(2) {background-color: rgb(11, 133, 34); rotate: -2deg; display: inline-block;}
+div>a.sticker:nth-of-type(3) {background-color: rgb(50, 71, 205); rotate: 1deg; display: inline-block;}
+div>a.sticker:nth-of-type(4) {background-color: rgb(176, 121, 27); rotate: -3deg; display: inline-block;}
 
 
 @keyframes wobble {
