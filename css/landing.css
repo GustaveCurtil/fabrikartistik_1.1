@@ -60,6 +60,10 @@ nav>div#menu>div:not(:last-of-type) {
     margin-bottom: var(--gap-medium);
 }
 
+nav>div#menu>div>a {
+    font-size: 0.9rem;
+}
+
 nav>div#menu>div>a:not(:last-of-type) {
     margin-right: var(--gap-medium);
 }
