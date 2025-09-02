@@ -22,8 +22,8 @@
     --color-blue: #d73c56;
 }
 
-a {color: var(--color-pink);}
-
+a {color: var(--color-pink); text-decoration-style: solid; text-decoration-thickness: 1px; text-underline-offset: 0.2rem;}
+a:hover {text-decoration-style: wavy; text-underline-offset: 0.1rem;}
 body {
     width: 100vw;
     height: 100svh;
@@ -61,7 +61,7 @@ h1 {
     text-align: center;
     font-size: 1.4rem;
 }
-h1 a {text-decoration: none; font-family:'Courier New', Courier, monospace;}
+h1 a {font-family:'Courier New', Courier, monospace;}
 a.sticker, .cirkel {
     width: fit-content;
     font-family: 'Courier New', Courier, monospace;
@@ -90,6 +90,7 @@ a.sticker {
 
 a.sticker span {
   display: inline-block; /* required for transform */
+  text-decoration: underline; text-decoration-style: solid; text-decoration-thickness: 1px; text-underline-offset: 0.2rem;
 }
 
 a.sticker {
@@ -101,10 +102,10 @@ a.sticker {
   0%   { transform: rotate(var(--start-angle)); }
   100% { transform: rotate(var(--start-angle)); }
 }
-div#domeinen>a.sticker:nth-of-type(1) {background-color: rgb(179, 158, 22); rotate: 3deg; display: inline-block;}
-div#domeinen>a.sticker:nth-of-type(2) {background-color: rgb(11, 133, 34); rotate: -2deg; display: inline-block;}
-div#domeinen>a.sticker:nth-of-type(3) {background-color: rgb(50, 71, 205); rotate: 1deg; display: inline-block;}
-div#domeinen>a.sticker:nth-of-type(4) {background-color: rgb(176, 121, 27); rotate: -3deg; display: inline-block;}
+nav#domeinen>a.sticker:nth-of-type(1) {background-color: rgb(179, 158, 22); rotate: 3deg; display: inline-block;}
+nav#domeinen>a.sticker:nth-of-type(2) {background-color: rgb(11, 133, 34); rotate: -2deg; display: inline-block;}
+nav#domeinen>a.sticker:nth-of-type(3) {background-color: rgb(50, 71, 205); rotate: 1deg; display: inline-block;}
+nav#domeinen>a.sticker:nth-of-type(4) {background-color: rgb(176, 121, 27); rotate: -3deg; display: inline-block;}
 
 
 @keyframes wobble {

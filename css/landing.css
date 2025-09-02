@@ -18,7 +18,7 @@ h1 {
 }
 
 svg {
-    width: 25%;
+    width: 25vw;
     height: 25vw;
     max-width: 200px;
     max-height: 200px;
@@ -29,49 +29,41 @@ p {
     margin-bottom: var(--gap-medium);
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
 
-nav>div {
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: var(--gap-big);
 }
 
-nav>div#domeinen {
+nav#domeinen {
     flex-direction: row;
     width: 100%;
 }
 
-nav>div#domeinen>a:not(:first-of-type) {
+nav#domeinen>a:not(:first-of-type) {
     margin-left: var(--gap-big);
 }
 
-nav>div#menu {
+nav#menu {
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-nav>div#menu>div:not(:last-of-type) {
-    margin-bottom: var(--gap-medium);
-}
 
-nav>div#menu>div>a {
-    font-size: 0.8rem;
+nav#menu>a {
+    font-size: 0.9rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-nav>div#menu>div>a:not(:last-of-type) {
+nav#menu>a:not(:last-of-type) {
     margin-right: var(--gap-medium);
 }
 
 @media screen and (min-width: 800px) {
     html {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     nav>div#menu {
         flex-direction: row;
