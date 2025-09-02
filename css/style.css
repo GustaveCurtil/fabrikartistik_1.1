@@ -54,16 +54,16 @@ header {
     display:flex;
     justify-content: left;
     align-items: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 h1 {
     text-align: center;
     font-size: 1.4rem;
 }
 h1 a {text-decoration: none; font-family:'Courier New', Courier, monospace;}
-header p, a.sticker, .cirkel {
+a.sticker, .cirkel {
     width: fit-content;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 0.8rem;
     background-color: var(--color-pink);
     color: var(--color-white);
 }
@@ -127,9 +127,6 @@ main {
     display: none;
 } */
 
-nav * {
-    font-size: 0.9rem;
-}
 
 /* nav p {
     font-style: italic;
