@@ -25,6 +25,10 @@ svg {
      margin-bottom: var(--gap-medium);
 }
 
+p {
+    margin-bottom: var(--gap-medium);
+}
+
 nav {
     display: flex;
     flex-direction: column;
@@ -48,11 +52,16 @@ nav>div#domeinen>a:not(:first-of-type) {
 }
 
 nav>div#menu {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-nav>div#menu>a:not(:last-of-type) {
+nav>div#menu>div:not(:last-of-type) {
     margin-bottom: var(--gap-medium);
+}
+
+nav>div#menu>div>a:not(:last-of-type) {
+    margin-right: var(--gap-medium);
 }
 
 @media screen and (min-width: 800px) {
