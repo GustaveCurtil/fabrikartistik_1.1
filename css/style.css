@@ -90,7 +90,10 @@ a.sticker {
 
 a.sticker span {
   display: inline-block; /* required for transform */
-  text-decoration: underline;
+}
+
+a.sticker {
+    text-decoration: none;
 }
 
 
