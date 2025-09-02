@@ -61,7 +61,8 @@ nav>div#menu>div:not(:last-of-type) {
 }
 
 nav>div#menu>div>a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 nav>div#menu>div>a:not(:last-of-type) {
