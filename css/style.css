@@ -46,10 +46,10 @@ body>div {
 header {
     height: var(--height-header) ;
     width: 100%;
-    border-bottom: 4px solid var(--color-pink);
+    /* border-bottom: 4px solid var(--color-pink); */
     padding: 0 var(--gap-small);
     background-color: var(--color-white);
-    border-bottom: 1px solid var(--color-black);
+    /* border-bottom: 1px solid var(--color-black); */
     /* background-image: url(/media/fabrik.jpg); */
     display:flex;
     justify-content: left;
@@ -62,8 +62,6 @@ h1 {
 h1 a {text-decoration: none; font-family:'Courier New', Courier, monospace;}
 header p, a.sticker, .cirkel {
     width: fit-content;
-    margin-left: var(--gap-big);
-    transform:rotate(-3deg) ;
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.8rem;
     background-color: var(--color-pink);
@@ -99,10 +97,10 @@ a.sticker span {
   0%   { transform: rotate(var(--start-angle)); }
   100% { transform: rotate(var(--start-angle)); }
 }
-div>a.sticker:nth-of-type(1) {background-color: rgb(179, 158, 22); rotate: 3deg; display: inline-block;}
-div>a.sticker:nth-of-type(2) {background-color: rgb(11, 133, 34); rotate: -2deg; display: inline-block;}
-div>a.sticker:nth-of-type(3) {background-color: rgb(50, 71, 205); rotate: 1deg; display: inline-block;}
-div>a.sticker:nth-of-type(4) {background-color: rgb(176, 121, 27); rotate: -3deg; display: inline-block;}
+div#domeinen>a.sticker:nth-of-type(1) {background-color: rgb(179, 158, 22); rotate: 3deg; display: inline-block;}
+div#domeinen>a.sticker:nth-of-type(2) {background-color: rgb(11, 133, 34); rotate: -2deg; display: inline-block;}
+div#domeinen>a.sticker:nth-of-type(3) {background-color: rgb(50, 71, 205); rotate: 1deg; display: inline-block;}
+div#domeinen>a.sticker:nth-of-type(4) {background-color: rgb(176, 121, 27); rotate: -3deg; display: inline-block;}
 
 
 @keyframes wobble {
@@ -117,7 +115,7 @@ main {
     padding: var(--gap-small);
 }
 
-nav {
+/* nav {
     width: 100%;
     height: var(--height-nav);
     display: flex;
@@ -127,7 +125,7 @@ nav {
     border-top: 1px solid var(--color-black);
     font-weight: 600;
     display: none;
-}
+} */
 
 nav * {
     font-size: 0.9rem;
@@ -136,31 +134,13 @@ nav * {
 /* nav p {
     font-style: italic;
 } */
-@media screen and (max-width: 799px) {
-nav>* {
-    width: calc(100%/3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-nav>*:not(:last-child) {
-    border-right: 1px solid var(--color-black);
-}
-
-nav>p {
-    background-color: var(--color-pink);
-    color: var(--color-white);
-}
-}
 
 .desktop {display: none;}
 
 @media screen and (min-width: 800px) {
     .desktop {display: initial;}
 
-    main {
+    /* main {
         flex-grow: 1;
         height: calc(100svh - var(--height-header));
     }  
@@ -189,7 +169,7 @@ nav>p {
     header p.desktop:nth-of-type(2), a.sticker:nth-of-type(2) {background-color: rgb(179, 158, 22); transform:rotate(3deg); display: inline-block;}
     header p.desktop:nth-of-type(3), a.sticker:nth-of-type(3) {background-color: rgb(11, 133, 34); transform:rotate(-2deg); display: inline-block;}
     header p.desktop:nth-of-type(4), a.sticker:nth-of-type(4) {background-color: rgb(50, 71, 205); transform:rotate(1deg); display: inline-block;}
-    header p.desktop:nth-of-type(5), a.sticker:nth-of-type(5) {background-color: rgb(205, 148, 50); transform:rotate(-3deg); display: inline-block;}
+    header p.desktop:nth-of-type(5), a.sticker:nth-of-type(5) {background-color: rgb(205, 148, 50); transform:rotate(-3deg); display: inline-block;} */
 
 }
 

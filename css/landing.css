@@ -1,56 +1,62 @@
-html {
-    font-size: 1.6rem;
-}
-@media screen and (min-width: 800px) {
-    html {font-size: 1.8rem;}    
-}
 
 
 body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-body>h1, body>a.cirkel {
-    margin-left: 0;
-    margin-bottom: 2rem;
+header>*:not(:last-child) {
+    margin-bottom: var(--gap-big);
 }
 
-a>span {
-    text-decoration-thickness: 0.1px;
-    text-underline-offset: 0.2rem;
-}
-
-body>div {
-    align-items: center;
+nav {
+    display: flex;
     flex-direction: column;
-    margin: 0;
+    width: 100%;
 }
 
-body>div>a {
-    margin: 0 !important;
+nav>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--gap-big);
 }
 
-body>div>a:not(:last-child) {
-    margin-bottom: var(--gap-small) !important;
+nav>div#domeinen {
+    flex-direction: row;
+    width: 100%;
 }
 
-div>a.sticker {
-    margin: 0;
+nav>div#domeinen>a:not(:first-of-type) {
+    margin-left: var(--gap-big);
 }
 
-    div>a.sticker:not(:first-of-type) {
-        margin-left: var(--gap-small);
-    }
+nav>div#menu {
+    flex-direction: column;
+}
+
+nav>div#menu>a:not(:last-of-type) {
+    margin-bottom: var(--gap-small);
+}
 
 @media screen and (min-width: 800px) {
-    body>div {
+    html {
+        font-size: 1.6rem;
+    }
+    nav>div#menu {
         flex-direction: row;
     }
-    body>div>a.sticker {margin-bottom:0 !important;}
-    div>a.sticker:not(:first-of-type) {
-        margin-left: var(--gap-big) !important;
+
+    nav>div#menu>a:not(:last-of-type) {
+        margin-bottom: 0;
+        margin-right: var(--gap-big);
     }
 }
