@@ -16,6 +16,16 @@ header {
 header>*:not(:last-child) {
     margin-bottom: var(--gap-big);
 }
+h1 {
+    font-size: 2rem;
+}
+
+svg {
+    width: 25%;
+    height: 25vw;
+    max-width: 200px;
+    max-height: 200px;
+}
 
 nav {
     display: flex;
