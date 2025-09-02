@@ -70,3 +70,24 @@ nav>div#menu>a:not(:last-of-type) {
         margin-right: var(--gap-big);
     }
 }
+
+    .heart {
+      animation: floatUp 6s linear  infinite;
+      transform-origin: center;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(40px);
+        opacity: 1;
+      }
+
+      60% {
+        opacity: 0.9;
+      }
+
+      100% {
+        transform: translateY(0px);
+        opacity: 0;
+      }
+    }
