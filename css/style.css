@@ -20,10 +20,10 @@
     --height-filters: 2.4rem;
     --height-keuzes: 2rem;
     --color-pink: #d73c56;
-    --color-white: #fafafa;
+    --color-white: rgb(250, 250, 250);
     --color-beige: hsl(44, 97%, 86%);
     --color-black: rgb(33, 33, 33);
-    --color-blue: #d73c56;
+    --color-blue: rgb(215, 60, 86);
 }
 
 a {color: var(--color-pink); text-decoration-style: solid; text-decoration-thickness: 1px; text-underline-offset: 0.2rem;}
@@ -85,11 +85,41 @@ h1 a>span {display: inline-block;}
 }
 
 a.sticker {
+    font-family:'Courier New', Courier, monospace;
+    height: auto;
     border-radius: 0px;
     text-shadow: 0.05rem 0.05rem 0px rgba(0, 0, 0, 0.596);
     box-shadow: 0.05rem 0.05rem 0.05rem rgba(30, 30, 30, 0.789);
-     letter-spacing:3px;
-     padding: var(--gap-mini);
+    letter-spacing:3px;
+    padding: var(--gap-mini);
+    text-decoration: underline; text-decoration-style: solid; text-decoration-thickness: 1px; text-underline-offset: 0.2rem;
+}
+
+.desktop a.sticker {
+    margin: 0 var(--gap-medium);
+}
+
+.mobile a.sticker {
+    font-size: 0.9rem;
+    
+}
+
+nav.movile {
+    gap: var(--gap-mini);
+}
+
+a.sticker.actief {
+    box-shadow: 0.05rem 0.05rem 0.5rem rgba(215, 60, 86, 0.532);
+    color: var(--color-pink);
+    text-decoration: none;
+    background-color:unset;
+
+    text-shadow: 0.1rem 0.1rem 4px rgba(0, 0, 0, 0.121);
+    pointer-events: none;
+    font-weight: 600;
+
+    background-color: rgba(250, 250, 250, 0.776);
+
 }
 
 a.sticker span {
@@ -97,9 +127,6 @@ a.sticker span {
   text-decoration: underline; text-decoration-style: solid; text-decoration-thickness: 1px; text-underline-offset: 0.2rem;
 }
 
-a.sticker {
-    text-decoration: none;
-}
 
 nav {
     display: flex;
