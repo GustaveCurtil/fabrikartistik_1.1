@@ -5,14 +5,18 @@
     overscroll-behavior: none;
 }
 
+* {
+    cursor: url("/cursor/cursor.cur"), pointer;
+}
+
 :root {
     --gap-mini: 0.2rem;
-    --gap-small: 0.8rem;
+    --gap-small: 0.5rem;
     --gap-medium: 1rem;
     --gap-big: 1.4rem;
     --height-course: 5.4rem;
-    --height-header: 2.4rem;
-    --height-nav: 2.2rem;
+    --height-header: 2.6rem;
+    --height-nav: 2.6rem;
     --height-filters: 2.4rem;
     --height-keuzes: 2rem;
     --color-pink: #d73c56;
@@ -23,7 +27,7 @@
 }
 
 a {color: var(--color-pink); text-decoration-style: solid; text-decoration-thickness: 1px; text-underline-offset: 0.2rem;}
-a:hover {text-decoration-style: wavy; text-underline-offset: 0.1rem;}
+a:hover, a.actief {text-decoration-style: wavy; text-underline-offset: 0.1rem;}
 body {
     width: 100vw;
     height: 100svh;
@@ -55,13 +59,12 @@ header {
     display:flex;
     justify-content: left;
     align-items: center;
-    font-family: 'Courier New', Courier, monospace;
 }
 h1 {
     text-align: center;
     font-size: 1.4rem;
 }
-h1 a {font-family:'Courier New', Courier, monospace;}
+h1 a {font-family:'Courier New', Courier, monospace; text-decoration: none;}
 a.sticker, .cirkel {
     width: fit-content;
     font-family: 'Courier New', Courier, monospace;
@@ -70,14 +73,15 @@ a.sticker, .cirkel {
 }
 h1 a>span {display: inline-block;}
 .cirkel {
-    
-    border: 1px solid var(--color-pink);
+    display: inline-block;
+    font-size: 0.9rem;
     border-radius: 50%;
-    padding: var(--gap-small) var(--gap-big);
-    background-color: var(--color-white);
-    color: var(--color-pink);
+    padding: var(--gap-small) var(--gap-medium);
+    background-color: var(--color-pink);
+    color: var(--color-white);
     text-align: center;
     font-weight: 600;
+    rotate: -3deg;
 }
 
 a.sticker {
@@ -95,6 +99,31 @@ a.sticker span {
 
 a.sticker {
     text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>a {
+    padding: 0 var(--gap-medium);
+    height: 100%;
+    display: flex;
+    align-items:center;
+}
+
+@media screen and (max-width: 799px) {
+    nav.mobile {
+        height: var(--height-nav);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    .desktop {
+        display: none;
+    }  
 }
 
 
@@ -139,42 +168,6 @@ main {
 
 .desktop {display: none;}
 
-@media screen and (min-width: 800px) {
-    .desktop {display: initial;}
-
-    /* main {
-        flex-grow: 1;
-        height: calc(100svh - var(--height-header));
-    }  
-
-    nav {
-        width: 150px;
-        flex-direction: column;
-        align-items: baseline;
-        padding: var(--gap-small);
-        border-top: 0;
-        border-right: 1px solid black;
-        height: calc(100svh - var(--height-header));
-        justify-content: left;
-    }
-
-    nav>* {
-        line-height: 2rem;
-        width: 100%;
-    }
-
-    nav>*:not(p):hover {
-        background-color: var(--color-pink);
-        color: var(--color-white);
-    }
-
-    header p.desktop:nth-of-type(2), a.sticker:nth-of-type(2) {background-color: rgb(179, 158, 22); transform:rotate(3deg); display: inline-block;}
-    header p.desktop:nth-of-type(3), a.sticker:nth-of-type(3) {background-color: rgb(11, 133, 34); transform:rotate(-2deg); display: inline-block;}
-    header p.desktop:nth-of-type(4), a.sticker:nth-of-type(4) {background-color: rgb(50, 71, 205); transform:rotate(1deg); display: inline-block;}
-    header p.desktop:nth-of-type(5), a.sticker:nth-of-type(5) {background-color: rgb(205, 148, 50); transform:rotate(-3deg); display: inline-block;} */
-
-}
-
 img {
     width: 100%;
 }
@@ -205,4 +198,9 @@ section.center {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+    .desktop {display: initial;}
+    .mobile {display: none;}
 }
