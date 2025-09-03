@@ -8,7 +8,7 @@ header {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to bottom, var(--color-white) 30%, rgba(250, 250, 250, 0.95) 60%, transparent 100%);
+    background: linear-gradient(to bottom, var(--color-white) 50%, rgba(250, 250, 250, 0.895) 65%, transparent 80%);
     background-color: none;
 }
 
@@ -17,7 +17,7 @@ nav.mobile#menu {
     position: fixed;
     width: 100%;
     gap: var(--gap-medium);
-    background: linear-gradient(to top, var(--color-white) 30%, rgba(250, 250, 250, 0.95) 60%, transparent 100%);
+    background: linear-gradient(to top, var(--color-white) 41%, rgba(250, 250, 250, 0.895) 64%, transparent 79%);
     background-color: none;
     position: fixed;
     bottom: 0;
