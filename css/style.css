@@ -104,8 +104,8 @@ a.sticker {
     
 }
 
-nav.movile {
-    gap: var(--gap-mini);
+nav.mobile {
+    gap: var(--gap-medium);
 }
 
 a.sticker.actief {

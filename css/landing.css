@@ -53,7 +53,7 @@ nav#domeinen>a:not(:first-of-type) {
 nav#menu {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: var(--gap-small);
+    gap: var(--gap-medium);
 }
 
 
