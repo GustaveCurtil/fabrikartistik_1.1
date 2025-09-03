@@ -1,29 +1,29 @@
 header {
     height: var(--height-header) ;
     width: 100%;
+    top: 0;
+    z-index: 10;
+    position: fixed;
     padding: 0 var(--gap-small);
-    background-color: var(--color-white);
-    border-bottom: 1px solid var(--color-black);
     display:flex;
     justify-content: space-between;
     align-items: center;
-}
-
-header>h1, header>div {
-    width: 220px;
+    background: linear-gradient(to bottom, var(--color-white) 30%, rgba(250, 250, 250, 0.95) 55%, transparent 100%);
+    background-color: none;
 }
 
 
 nav.mobile#menu {
+    position: fixed;
     width: 100%;
     gap: var(--gap-medium);
-    background: linear-gradient(to top, var(--color-white) 10%, transparent 100%);
+    background: linear-gradient(to top, var(--color-white) 30%, rgba(250, 250, 250, 0.95) 55%, transparent 100%);
     background-color: none;
     position: fixed;
     bottom: 0;
     z-index: 10;
-    backdrop-filter: blur(2px); /* makes background behind element blurry */
-    -webkit-backdrop-filter: blur(2px); 
+    /* backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);  */
 }
 
 nav>a {
@@ -51,8 +51,9 @@ header>div>svg {
 
 
 main {
-    height: calc(100% - var(--height-header));
+    height: 100%;
     padding-bottom: var(--height-nav);
+    padding-top: var(--height-header);
     position: relative;
 }
 
@@ -65,4 +66,7 @@ main {
     header>nav.desktop {
         display: flex;
     }
+    header>h1, header>div {
+    width: 220px;
+}
 }

@@ -76,7 +76,7 @@ a.sticker, .cirkel {
 h1 a>span {display: inline-block;}
 .cirkel {
     display: inline-block;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     border-radius: 50%;
     border: 1px solid var(--color-pink);
     padding: var(--gap-small) var(--gap-medium);
