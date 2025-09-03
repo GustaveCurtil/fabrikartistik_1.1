@@ -96,10 +96,22 @@ a.sticker {
     text-decoration: underline; text-decoration-style: solid; text-decoration-thickness: 1px; text-underline-offset: 0.2rem;
 }
 
-a.sticker:hover {
+.mobile a.sticker:hover {
     transform: rotate(3deg) scale(1);
     text-decoration-style: wavy; text-underline-offset: 0.1rem;
+    box-shadow: 0.05rem 0.05rem 0.5rem rgba(215, 60, 86, 0.532);
+    color: var(--color-pink);
+    text-decoration: none;
+    background-color:unset;
+
+    text-shadow: 0.1rem 0.1rem 4px rgba(0, 0, 0, 0.121);
+    font-weight: 600;
 }
+
+.desktop a.sticker:hover {
+    transform: rotate(3deg) scale(1);
+}
+
 
 .desktop a.sticker {
     margin: 0 var(--gap-medium);
