@@ -52,6 +52,7 @@ header>div>svg {
 
 main {
     height: calc(100% - var(--height-header));
+    padding-bottom: var(--height-nav);
 }
 
 
