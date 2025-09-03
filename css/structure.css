@@ -19,7 +19,7 @@ nav.mobile {
   background: linear-gradient(to top, var(--color-white) 10%, transparent 100%);
     background-color: none;
     position: fixed;
-    z-index: 50;
+    z-index: -1;
     bottom: 0;
     backdrop-filter: blur(2px); /* makes background behind element blurry */
   -webkit-backdrop-filter: blur(2px); 
@@ -53,6 +53,12 @@ header>div>svg {
 main {
     height: calc(100% - var(--height-header));
     padding-bottom: var(--height-nav);
+    z-index: -10;
+}
+
+main * {
+    position: relative;
+        z-index: -100;
 }
 
 

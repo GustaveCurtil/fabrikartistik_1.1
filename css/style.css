@@ -9,9 +9,7 @@
     cursor: url("/cursor/cursor.cur"), pointer;
 }
 
-::-webkit-scrollbar {
-  z-index: 500;
-}
+
 
 :root {
     --gap-mini: 0.2rem;
@@ -65,7 +63,6 @@ header {
     align-items: center;
 }
 h1 {
-    text-align: center;
     font-size: 1.4rem;
 }
 h1 a {font-family:'Courier New', Courier, monospace; text-decoration: none;}
@@ -99,11 +96,16 @@ a.sticker {
     text-decoration: underline; text-decoration-style: solid; text-decoration-thickness: 1px; text-underline-offset: 0.2rem;
 }
 
+a.sticker:hover {
+    transform: rotate(3deg) scale(1);
+    text-decoration-style: wavy; text-underline-offset: 0.1rem;
+}
+
 .desktop a.sticker {
     margin: 0 var(--gap-medium);
 }
 
-.mobile a.sticker {
+nav#menu a.sticker {
     font-size: 0.8rem;
     
 }
@@ -113,6 +115,7 @@ nav.mobile {
 }
 
 a.sticker.actief {
+    transform: rotate(3deg) scale(1);
     box-shadow: 0.05rem 0.05rem 0.5rem rgba(215, 60, 86, 0.532);
     color: var(--color-pink);
     text-decoration: none;
@@ -127,7 +130,7 @@ a.sticker.actief {
 }
 
 a.sticker span {
-  display: inline-block; /* required for transform */
+  display: inline-block;
   text-decoration: underline; text-decoration-style: solid; text-decoration-thickness: 1px; text-underline-offset: 0.2rem;
 }
 
