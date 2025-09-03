@@ -38,6 +38,7 @@ header>div {
 
 header>nav {
     justify-content: center;
+                    gap: var(--gap-medium);
 }
 
 header>div:last-of-type {
