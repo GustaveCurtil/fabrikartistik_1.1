@@ -9,20 +9,21 @@ header {
     align-items: center;
 }
 
-header>h1 {
+header>h1, header>div {
     width: 220px;
 }
 
-nav.mobile {
+
+nav.mobile#menu {
     width: 100%;
     gap: var(--gap-medium);
-  background: linear-gradient(to top, var(--color-white) 10%, transparent 100%);
+    background: linear-gradient(to top, var(--color-white) 10%, transparent 100%);
     background-color: none;
     position: fixed;
-    z-index: -1;
     bottom: 0;
+    z-index: 10;
     backdrop-filter: blur(2px); /* makes background behind element blurry */
-  -webkit-backdrop-filter: blur(2px); 
+    -webkit-backdrop-filter: blur(2px); 
 }
 
 nav>a {
@@ -31,9 +32,7 @@ nav>a {
 }
 
 header>div {
-    display: flex;
-    align-items: center;
-    gap: var(--gap-small);
+    text-align: right;
 }
 
 header>nav {
@@ -50,15 +49,13 @@ header>div>svg {
     width: calc(var(--height-header) - 2 * var(--gap-small));;
 }
 
+
 main {
     height: calc(100% - var(--height-header));
     padding-bottom: var(--height-nav);
+    position: relative;
 }
 
-main * {
-    position: relative;
-        z-index: -100;
-}
 
 
 @media screen and (min-width: 800px) {
