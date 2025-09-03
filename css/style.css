@@ -98,6 +98,10 @@ a.sticker {
     text-decoration: underline; text-decoration-style: solid; text-decoration-thickness: 1px; text-underline-offset: 0.2rem;
 }
 
+nav#domeinen a.sticker:hover {
+    transform: rotate(3deg) scale(1);
+}
+
 .mobile a.sticker:hover {
     transform: rotate(3deg) scale(1);
     text-decoration-style: wavy; text-underline-offset: 0.1rem;

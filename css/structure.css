@@ -61,7 +61,7 @@ main {
 
 @media screen and (min-width: 800px) {
     main {
-        height: calc(100% - var(--height-header));
+        padding-bottom: var(--gap-medium);
     }  
     header>nav.desktop {
         display: flex;
