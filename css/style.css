@@ -18,8 +18,8 @@
     --gap-medium: 1rem;
     --gap-big: 1.4rem;
     --height-course: 5.4rem;
-    --height-header: 2.6rem;
-    --height-nav: 2.6rem;
+    --height-header: 2.4rem;
+    --height-nav: 2.4rem;
     --height-filters: 2.4rem;
     --height-keuzes: 2rem;
     --color-pink: #d73c56;
@@ -108,7 +108,7 @@ nav#domeinen a.sticker:hover {
     box-shadow: 0.05rem 0.05rem 0.5rem rgba(215, 60, 86, 0.532);
     color: var(--color-pink);
     text-decoration: none;
-    background-color:unset;
+    background-color: var(--color-white);
 
     text-shadow: 0.1rem 0.1rem 4px rgba(0, 0, 0, 0.121);
     font-weight: 600;
@@ -170,7 +170,7 @@ nav>a {
     nav.mobile {
         height: var(--height-nav);
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
     } 
     .desktop {
