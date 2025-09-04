@@ -19,7 +19,7 @@
     --gap-big: 1.4rem;
     --height-course: 5.4rem;
     --height-header: 2.4rem;
-    --height-nav: 2.4rem;
+    --height-nav: 2.2rem;
     --height-filters: 2.4rem;
     --height-keuzes: 2rem;
     --color-pink: #d73c56;
@@ -33,7 +33,7 @@ a {color: var(--color-pink); text-decoration-style: solid; text-decoration-thick
 a:hover, a.actief {text-decoration-style: wavy; text-underline-offset: 0.1rem;}
 body {
     width: 100vw;
-    height: 100svh;
+    height: 100vh;
     overflow: hidden;
     background-color: var(--color-white);
     color: var(--color-black);
@@ -197,7 +197,7 @@ nav#domeinen>a.sticker:nth-of-type(4) {background-color: rgb(176, 121, 27); rota
 main {
     width: 100%;
     overflow-y: auto;
-    height: calc(100svh - var(--height-header));
+    height: calc(100vh - var(--height-header));
     padding: var(--gap-small);
 }
 
