@@ -12,7 +12,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: var(--gap-big);
     position: relative;
-    margin-bottom: var(--height-filters);
+    margin-bottom: var(--gap-medium);
 
 }
 

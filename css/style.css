@@ -33,7 +33,7 @@ a {color: var(--color-pink); text-decoration-style: solid; text-decoration-thick
 a:hover, a.actief {text-decoration-style: wavy; text-underline-offset: 0.1rem;}
 body {
     width: 100vw;
-    height: 100vh;
+    height: 100svh;
     overflow: hidden;
     background-color: var(--color-white);
     color: var(--color-black);
@@ -124,7 +124,7 @@ nav#domeinen a.sticker:hover {
 }
 
 nav#menu a.sticker {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     
 }
 
@@ -197,7 +197,7 @@ nav#domeinen>a.sticker:nth-of-type(4) {background-color: rgb(176, 121, 27); rota
 main {
     width: 100%;
     overflow-y: auto;
-    height: calc(100vh - var(--height-header));
+    height: calc(100svh - var(--height-header));
     padding: var(--gap-small);
 }
 
